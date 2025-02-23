@@ -1,0 +1,12 @@
+try using different models from this link:
+https://huggingface.co/blog/leaderboard-hebrew
+
+for comparing retrieval methods:
+https://medium.com/@satyadeepbehera/decoding-retrieval-strategies-a-comprehensive-guide-to-information-retrieval-techniques-cb735dac075a
+
+for metrics:
+https://medium.com/@zilliz_learn/optimizing-rag-applications-a-guide-to-methodologies-metrics-and-evaluation-tools-for-enhanced-a9ae3d9c7149
+
+choose embedding model by MTAB metrics table
+
+https://github.com/amir-zeldes/RFTokenizer
