@@ -1,5 +1,4 @@
 import heapq
-from uuid import uuid4
 
 from nltk.tokenize import word_tokenize
 from rank_bm25 import BM25Okapi
