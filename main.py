@@ -3,7 +3,7 @@ from langchain_core.prompts import ChatPromptTemplate
 
 from chroma import vector_store_manager
 from config import template, model, MODEL, PDF_FOLDER, embedding_manager
-from process_pdfs import load_tokenized_documents, embedd_pdfs_and_save
+from process_pdfs import load_tokenized_documents, embedd_pdfs_and_save, tokenize_and_store
 from retrieval_methods import hybrid_retrieval
 
 # TODO for morning:
@@ -20,10 +20,21 @@ from retrieval_methods import hybrid_retrieval
 # deploy on internet?
 
 
+
+
 # To run streamlit: streamlit run .\main.py
 
+
+# Use only if the pdfs aren't tokenized:
+# tokenize_and_store(PDF_FOLDER=PDF_FOLDER)
 tokenized_documents = load_tokenized_documents()
+
 vector_store_manager.update_embedding_model('dicta-il/dictabert')
+
+# Use only if you haven't embedded and saved to chroma
+# embedd_pdfs_and_save(PDF_FOLDER=PDF_FOLDER)
+
+
 question = st.chat_input()
 print('Using Model:', MODEL)
 print('Using Embedding Model:', embedding_manager.get_embedding_model_name())
