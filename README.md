@@ -15,8 +15,12 @@
 
 ## To run:
 
-First, install all the packages in requirements.txt.   
-Note - Some packages might require to download "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
+First, install all the packages in requirements.txt:
+```bash
+pip install -r requirements.txt
+```
+Note - Some packages might require to download "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/  
+Note - I used python 3.12 for my project
 
 Install Ollama if you don't have it already. Then, download deepseek:r1:32b parameters (The model I used) with the following command:
 ```bash
@@ -24,15 +28,22 @@ ollama pull deepseek-r1:32b
 ```  
 Note - The model weighs 20GB.  
 
-Download tokenizer (run in a python file):
+Download tokenizer:
+```bash
+python -c "import nltk; nltk.download('punkt_tab')"
 ```
+
+Or if it doesn't work just copy and run in a python file:
+```
+import nltk
 nltk.download("punkt_tab")
 ```
+
 Finally, run:
 ```bash 
 streamlit run .\main.py
 ```   
-Note - When running, I sometimes get an irrelevant torch error, ignore it.
+Note - When running, you might sometimes get an irrelevant torch error, ignore it.
 
 <br>
 
