@@ -7,7 +7,7 @@
 2. model_response_report.ipynb - containing some generated answers from the model
 
 ### Python files:
-1. main.py - main runner file
+1. main.py - main runner file and streamlit pipeline  
 2. config.py - containing all the configs for the project (like model)
 3. chroma.py - containing all chroma utils
 4. process_pdfs.py - containing all preprocessing utils needed for pdfs
