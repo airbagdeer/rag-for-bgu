@@ -12,6 +12,8 @@ PDF_FOLDER = './shnatonim'
 # MODEL = "phi4:14b"
 MODEL = "deepseek-r1:32b"
 
+# If you want to remove the thinking tags that deepseek returns:
+REMOVE_THINK_TAGS = False
 
 class EmbeddingManager:
     def __init__(self, model_name="dicta-il/dictabert", persist_directory = "./chroma_db"):
