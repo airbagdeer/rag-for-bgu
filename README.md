@@ -17,7 +17,7 @@
 First, install all the packages in requirements.txt.   
 Note - Some packages might require to download "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
 
-Install Ollama if you dont have it already. Then, download deepseek:r1:32b parameters (The model I used) with the following command:
+Install Ollama if you don't have it already. Then, download deepseek:r1:32b parameters (The model I used) with the following command:
 ```bash
 ollama pull deepseek-r1:32b
 ```  
@@ -30,7 +30,9 @@ nltk.download("punkt_tab")
 Finally, run:
 ```bash 
 streamlit run .\main.py
-```  
+```   
+Note - When running, I sometimes get an irrelevant torch error, ignore it.
+
 <br>
 
 Additional Steps:
