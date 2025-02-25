@@ -4,7 +4,7 @@
 ### Report Files:
 1. RAG_for_BGU_report.pdf - The report about the entire system.
 1. retrieval_performence_report.ipynb - containing explanation and extensive analysis about the retrieving method, also contains some explanations about the parameters choices I made.
-2. model_response_report.ipynb - containing some generated answers from the model
+2. model_response_report.ipynb - containing some generated answers from the model and qualitative analysis.
 
 ### Python files:
 1. main.py - main runner file and streamlit pipeline  
